@@ -20,17 +20,21 @@ exports.getPodcasts = functions.https.onRequest(async (req, res) => {
     // Parse the RSS feed
     const feed = await parser.parseURL(RSS_FEED_URL);
 
+    // Parse the query parameters (in snake_case)
+    const queryDate = req.query.date ? new Date(req.query.date) : null;
+    const isBefore = req.query.is_before === "true"; // boolean flag
+
     // Pagination setup
     const page = parseInt(req.query.page) || 1;
     const pageSize = 100; // Set to 100 items per page
     const start = (page - 1) * pageSize;
     const end = start + pageSize;
-    const {v4: uuidv4} = require("uuid");
 
     // Convert feed.items to the structure of the Podcast model
-    const podcasts = feed.items.map((item) => {
+    let podcasts = feed.items.map((item) => {
       return {
-        id: uuidv4(), // Generate a unique ID for each podcast
+        // Use a unique field such as 'guid' or 'link' as the podcast ID
+        id: item.guid || item.link || item.title || "", // Use title or other fields if guid is not available
         title: item.title || "",
         subtitle: item.contentSnippet || "", // This will serve as a subtitle
         timestamp: item.pubDate || "", // The published date
@@ -39,14 +43,39 @@ exports.getPodcasts = functions.https.onRequest(async (req, res) => {
         lengthInBytes: item.enclosure ? parseFloat(item.enclosure.length || 0) : 0, // The length in bytes from enclosure
         itunesDuration: item.itunes && item.itunes.duration ? item.itunes.duration : "", // iTunes duration
         fileUrl: item.enclosure ? item.enclosure.url : "", // Same as podcastUrl for this case
-        isFavorite: false, // Not available from RSS feed
-        isDownloaded: false, // Not available from RSS feed
-        withMusic: false, // Not available from RSS feed
         createdDate: item.pubDate ? new Date(item.pubDate) : null, // Convert pubDate to Date object
       };
     });
 
-    // Paginate the podcast items
+    // Check if queryDate is a valid date
+    if (queryDate && !isNaN(queryDate.getTime())) {
+      // Filter podcasts based on the date and isBefore flag
+      podcasts = podcasts.filter((podcast) => {
+        if (podcast.createdDate) {
+          if (isBefore) {
+            return podcast.createdDate < queryDate;
+          } else {
+            return podcast.createdDate > queryDate;
+          }
+        }
+        return false; // Exclude podcasts without a valid date
+      });
+    } else if (queryDate) {
+      // If queryDate is invalid, return an error
+      return res.status(400).json({
+        error: "Invalid date format. Please use a valid ISO 8601 date format.",
+      });
+    }
+
+    // If isBefore is false, return all filtered podcasts (no pagination)
+    if (!isBefore) {
+      return res.status(200).json({
+        totalItems: podcasts.length,
+        podcasts: podcasts,
+      });
+    }
+
+    // Paginate the filtered podcast items if isBefore is true
     const paginatedItems = podcasts.slice(start, end);
 
     // Return paginated items as JSON
