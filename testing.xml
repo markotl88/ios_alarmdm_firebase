@@ -27,6 +27,90 @@
 		<itunes:category text="Arts"></itunes:category>
 
         <item>
+			<title>Ponedeljak 05. april 2021.</title>
+			<itunes:subtitle>Prckovit Aminčić</itunes:subtitle>
+			<description>Prckovit Aminčić</description>
+			<link>https://podcast.daskoimladja.com/?name=2021-04-05-PONEDELJAK_05.04.2021bm.mp3</link>
+			<enclosure url="https://podcast.daskoimladja.com/media/2021-04-05-PONEDELJAK_05.04.2021bm.mp3" length="59604200" type="audio/mpeg"></enclosure>
+			<guid>https://podcast.daskoimladja.com/?name=2021-04-05-PONEDELJAK_05.04.2021bm.mp3</guid>
+			<itunes:duration>2:04:10</itunes:duration>
+			<author>dasko.milinovic@gmail.com (DaškoiMlađa)</author>
+			<itunes:author>DaškoiMlađa</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<pubDate>Mon, 05 Apr 2021 09:54:00 +0200</pubDate>
+		</item>
+
+        <item>
+			<title>Ponedeljak 05. april 2021.</title>
+			<itunes:subtitle>Prckovit Aminčić</itunes:subtitle>
+			<description>Prckovit Aminčić</description>
+			<link>https://podcast.daskoimladja.com/?name=2021-04-05-PONEDELJAK_05.04.2021.mp3</link>
+			<enclosure url="https://podcast.daskoimladja.com/media/2021-04-05-PONEDELJAK_05.04.2021.mp3" length="82629802" type="audio/mpeg"></enclosure>
+			<guid>https://podcast.daskoimladja.com/?name=2021-04-05-PONEDELJAK_05.04.2021.mp3</guid>
+			<itunes:duration>2:52:09</itunes:duration>
+			<author>dasko.milinovic@gmail.com (DaškoiMlađa)</author>
+			<itunes:author>DaškoiMlađa</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<pubDate>Mon, 05 Apr 2021 09:51:00 +0200</pubDate>
+		</item>
+
+        <item>
+			<title>Sportski Pozdrav 010</title>
+			<itunes:subtitle>Pred vratima Vecitih rivala...</itunes:subtitle>
+			<description>Pred vratima Vecitih rivala...</description>
+			<link>https://podcast.daskoimladja.com/?name=2021-04-05-Sportski_Pozdrav_010_Pred_vratima_vecitih_rivala.mp3</link>
+			<enclosure url="https://podcast.daskoimladja.com/media/2021-04-05-Sportski_Pozdrav_010_Pred_vratima_vecitih_rivala.mp3" length="103533169" type="audio/mpeg"></enclosure>
+			<guid>https://podcast.daskoimladja.com/?name=2021-04-05-Sportski_Pozdrav_010_Pred_vratima_vecitih_rivala.mp3</guid>
+			<itunes:duration>2:02:58</itunes:duration>
+			<author>dasko.milinovic@gmail.com (DaškoiMlađa)</author>
+			<itunes:author>DaškoiMlađa</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<pubDate>Mon, 05 Apr 2021 06:53:00 +0200</pubDate>
+		</item>
+
+        <item>
+			<title>Na ivici ofsajda 4. mart 2021.</title>
+			<itunes:subtitle>Doni namešta, ali je lep i daje pod prečku</itunes:subtitle>
+			<description>Doni namešta, ali je lep i daje pod prečku</description>
+			<link>https://podcast.daskoimladja.com/?name=2021-04-04-NIO_4.4.2021.mp3</link>
+			<enclosure url="https://podcast.daskoimladja.com/media/2021-04-04-NIO_4.4.2021.mp3" length="41375768" type="audio/mpeg"></enclosure>
+			<guid>https://podcast.daskoimladja.com/?name=2021-04-04-NIO_4.4.2021.mp3</guid>
+			<itunes:duration>1:26:12</itunes:duration>
+			<author>dasko.milinovic@gmail.com (DaškoiMlađa)</author>
+			<itunes:author>DaškoiMlađa</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<pubDate>Sun, 04 Apr 2021 21:32:00 +0200</pubDate>
+		</item>
+
+        <item>
+			<title>Petak 02. april 2021.</title>
+			<itunes:subtitle>Mladjovdaaaaaaaaaaaaan.....</itunes:subtitle>
+			<description>Mladjovdaaaaaaaaaaaaan.....</description>
+			<link>https://podcast.daskoimladja.com/?name=2021-04-02-PETAK_02.04.2021bm.mp3</link>
+			<enclosure url="https://podcast.daskoimladja.com/media/2021-04-02-PETAK_02.04.2021bm.mp3" length="58336739" type="audio/mpeg"></enclosure>
+			<guid>https://podcast.daskoimladja.com/?name=2021-04-02-PETAK_02.04.2021bm.mp3</guid>
+			<itunes:duration>2:01:32</itunes:duration>
+			<author>dasko.milinovic@gmail.com (DaškoiMlađa)</author>
+			<itunes:author>DaškoiMlađa</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<pubDate>Fri, 02 Apr 2021 09:56:00 +0200</pubDate>
+		</item>
+
+        <item>
+			<title>Petak 02. april 2021.</title>
+			<itunes:subtitle>Mladjovdaaaaaaaaaaaaan.....</itunes:subtitle>
+			<description>Mladjovdaaaaaaaaaaaaan.....</description>
+			<link>https://podcast.daskoimladja.com/?name=2021-04-02-PETAK_02.04.2021.mp3</link>
+			<enclosure url="https://podcast.daskoimladja.com/media/2021-04-02-PETAK_02.04.2021.mp3" length="82417896" type="audio/mpeg"></enclosure>
+			<guid>https://podcast.daskoimladja.com/?name=2021-04-02-PETAK_02.04.2021.mp3</guid>
+			<itunes:duration>2:51:42</itunes:duration>
+			<author>dasko.milinovic@gmail.com (DaškoiMlađa)</author>
+			<itunes:author>DaškoiMlađa</itunes:author>
+			<itunes:explicit>no</itunes:explicit>
+			<pubDate>Fri, 02 Apr 2021 09:53:00 +0200</pubDate>
+		</item>
+
+        <item>
 			<title>Rastrojavanje 01. April 2021</title>
 			<itunes:subtitle>Srđan Dinčić, stand-up komičar</itunes:subtitle>
 			<description>Srđan Dinčić, stand-up komičar</description>
